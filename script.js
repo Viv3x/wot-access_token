@@ -26,7 +26,7 @@ function makeRequestUrl(base, queryParams) {
 }
 
 function login() {
-    document.location.href = makeRequestUrl(LOGIN, {
+    window.location.href = makeRequestUrl(LOGIN, {
         "application_id": APPLICATION_ID,
         "redirect_uri": document.location.origin + document.location.pathname
     });
