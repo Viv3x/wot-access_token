@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Access Token Grabber</title>
+    </head>
     <body>
-        <h1>To jest test</h1>
-        <p>Test</p>
+        <center>
+            <h1>Klikajac poniższy guzik zostaniesz przekierowany na strone wargaming na którą musisz sie zalogować</h1>
+            <button onclick="login()">Zaloguj</button>
+        </center>
     </body>
+    <script src=script.js></script>
 </html>
