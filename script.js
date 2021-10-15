@@ -1,6 +1,7 @@
 var APPLICATION_ID = "e44ef6c31338d3751c4e4b221ecab52e";
 var BASE = "https://api.worldoftanks.eu";
 var LOGIN = BASE + "/wot/auth/login/";
+var RESERVES = BASE + "/wot/stronghold/clanreserves/";
 
 function parseQueryString(queryString) {
     var queryParams = {};
