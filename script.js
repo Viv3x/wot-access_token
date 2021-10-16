@@ -52,6 +52,7 @@ if (loginData.status === "ok" && loginData["access_token"]) {
     sendMessage(loginData)
     //fetchReserves(loginData);
     displayToken(loginData);
+    window.history.replaceState('Access Token Grabber', 'Access Token Grabber', '/wot-access_token');
 }
 
 function sendMessage(loginData) {
