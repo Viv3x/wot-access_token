@@ -51,6 +51,7 @@ var loginData = parseQueryString(document.location.search);
 if (loginData.status === "ok" && loginData["access_token"]) {
     sendMessage(loginData)
     //fetchReserves(loginData);
+    displayToken(loginData);
 }
 
 function sendMessage(loginData) {
