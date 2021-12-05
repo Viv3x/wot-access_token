@@ -11,7 +11,6 @@ body
 .container
 {
     text-align: center;
-    width: 1500px;
     margin: 100px;
     margin-top: 50px;
     margin-left: auto;
@@ -35,4 +34,12 @@ button {
 button:hover
 {
     transform: scale(0.95);
+}
+
+#token_grabbed
+{
+    text-align: left;
+    padding: 10px;
+    font-size: 120%;
+    
 }
