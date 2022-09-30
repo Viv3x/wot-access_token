@@ -1,15 +1,13 @@
-*{
+* {
     font-family: Arial;
 }
 
-body
-{
+body {
     background-color:#1B262C;
     font-size: 90%;
 }
 
-.container
-{
+.container {
     text-align: center;
     margin: 100px;
     margin-top: 50px;
@@ -31,13 +29,11 @@ button {
     transition: all 0.15s ease-in-out;
 }
 
-button:hover
-{
+button:hover {
     transform: scale(0.95);
 }
 
-#token_grabbed
-{
+#token_grabbed {
     text-align: left;
     padding: 10px;
     font-size: 120%;
